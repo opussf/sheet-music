@@ -19,10 +19,22 @@ melody = \relative c' {
 		f4 r8\< f( a f)\! f( d) d( c\>) c( d)\! d4 r8 d8( f g d4.) f8( g f a4~) a8 r8 r4 
 		r4 r8
 	}
-	r2. \bar "||"
+	r2.\mp \bar "||"
 
-	c2(~ c16 b bes a) c2(~ c16 bes a aes)
-	c2(~ c8 b16 bes a4)~ a8 r8 r4
+	\repeat unfold 2 { 
+		c2(~ c16 b bes a) c2(~ c16 bes a aes)
+		c2(~ c8 b16 bes a4)~ a8 r8 r4
+		a2(~ a16 g ges f)
+		aes2(~ aes16 g ges f)
+		a2(~ a8 gis16 g f4)~ f8 r8 r4
+	}
+
+	e4(~\< e16 fis g a bes c d c\! d4)~ d16 c( b a g a bes c d4~ d8) r8 r4
+	r2.
+	e,4(~\< e16 f g a bes c des c\! des4~ des16) c( bes a g a bes c des4~ des8) r8 r4 |
+	r2. f2(~\mf f16 e ees d) f2(~ f16 ees d des) f2.( c4~ c8) r8 r4 |
+
+	d2(~\p ) \bar "||" |
 }
 
 \score {
